@@ -236,7 +236,7 @@ if ($shutdown) {
     Logger "INFO" "Initiating computer shutdown in 10 seconds..."
     Start-Sleep -s 10
     Logger "INFO" "Script End. Computer Shutdown."
-    Stop-Computer
+    Stop-Computer -Force
 } else {
     Logger "INFO" "Script End."
     if (-not $auto) {
